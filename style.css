@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  /* ### Primary */
+
+  --strongCyan: hsl(171, 66%, 44%);
+  --lightBlue: hsl(233, 100%, 69%);
+
+  /* ### Neutral */
+
+  --darkGrayishBlue: hsl(210, 10%, 33%);
+  --grayishBlue: hsl(201, 11%, 66%);
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.8rem;
+  min-height: 100vh;
+  display: grid;
+  text-align: center;
+  place-items: center;
+}
+header {
+  position: relative;
+}
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--darkGrayishBlue);
+  cursor: pointer;
+}
+.logo-img-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--darkGrayishBlue);
+  margin-bottom: 20px;
+}
+p {
+  color: var(--grayishBlue);
+  font-size: 1.5rem;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  width: 100%;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.btn-ios {
+  margin-bottom: 20px;
+  background-color: var(--strongCyan);
+  box-shadow: 0 3px 0 hsl(171, 68%, 38%), 0 10px 10px hsla(171, 66%, 44%, 0.217);
+}
+.btn-ios:hover,
+.btn-mac:hover {
+  filter: brightness(120%);
+}
+.btn-mac {
+  margin-bottom: 20px;
+  background-color: var(--lightBlue);
+  box-shadow: 0 3px 0 hsl(233, 75%, 60%),
+    0 10px 10px hsla(233, 100%, 69%, 0.217);
+}
+.snippets,
+.small-description,
+.mob-tab,
+.productivity,
+.meta-descriptions,
+.blacklist,
+.text-snippets,
+.sneak-preview,
+.logos,
+.bottom-download {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.logos {
+  gap: 50px;
+}
+footer {
+  width: 100%;
+  margin-top: 30px;
+  background-color: whitesmoke;
+}
+.attribution {
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--strongCyan);
+}
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+}
+.img-logo {
+  width: 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.links a {
+  transition: color 0.3s;
+}
+.social-links {
+  display: flex;
+  gap: 30px;
+}
+.social-links:hover {
+  color: var(--strongCyan);
+}
+.social-logo i {
+  transition: color 0.3s;
+  font-size: 2.4rem;
+}
+.social-logo i:hover,
+.links a:hover {
+  color: var(--strongCyan);
+}
+.snippets-img {
+  margin: 50px 0;
+}
+@media (min-width: 465px) {
+  .container {
+    overflow: hidden;
+    width: 70%;
+  }
+  .snippets-img {
+    margin: 50px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    font-size: 90%;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .download-btn {
+    display: flex;
+    width: 750px;
+    gap: 30px;
+  }
+  .mob-tab div {
+    width: 750px;
+  }
+  .download,
+  .snippet-desc {
+    width: 750px;
+  }
+  .snippets {
+    width: 100%;
+  }
+  .img-desc {
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+  }
+  .snippets-img {
+    width: 50%;
+    margin: 50px;
+  }
+  .small-description {
+    width: 40%;
+  }
+  .productivity {
+    width: 80%;
+  }
+  .blacklist,
+  .text-snippets,
+  .sneak-preview {
+    width: 33.33%;
+  }
+  .meta-descriptions,
+  .logos {
+    flex-direction: row;
+    margin: 20px 0;
+  }
+  .bottom-download {
+    width: 80%;
+    margin: 50px 0;
+  }
+  .main-footer {
+    flex-direction: row;
+    gap: 70px;
+    justify-content: space-evenly;
+  }
+  footer,
+  .social-logo i {
+    font-size: 1.5rem;
+  }
+  .links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+}
